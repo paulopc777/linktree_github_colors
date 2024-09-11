@@ -15,9 +15,9 @@ html {
 }
 
 a {
-  color: #fff;
+  color: #fff!important;
   font-style: none;
-  text-decoration: none;
+  text-decoration: none !important;
   text-align: center;
 }
 p {
