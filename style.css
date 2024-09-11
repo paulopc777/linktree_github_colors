@@ -1,34 +1,28 @@
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 html {
-  background: rgb(61, 0, 107);
-  background: linear-gradient(
-    180deg,
-    rgb(36, 1, 63) 0%,
-    rgb(112, 1, 168) 100%
-  );
-
+  color: #fff;
   overflow: hidden;
+}
+h3 {
+  color: #fff !important;
 }
 
 a {
-  color: #fff!important;
+  color: #fff !important;
   font-style: none;
   text-decoration: none !important;
   text-align: center;
-}
-p {
-  padding: 1rem;
+  text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 .conteiner {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -37,29 +31,78 @@ p {
   overflow: hidden;
   gap: 10px;
   margin-bottom: 3rem;
+  background-color: #0d1117;
 }
 
 .avatar {
   width: 100px;
   height: 100px;
-  background-color: beige;
   border-radius: 100%;
 }
-.links_conteiner{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+.shadow {
+  box-shadow: 0px 3px 7px #00000044;
 }
+.links_conteiner {
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+
 .links {
-  width: 150px;
+  width: 140%;
   height: fit-content;
-  background-color: rgb(169, 46, 231);
-  border-radius: 10px;
+  background-color: #212830;
+  border: 1px solid;
+  border-radius: 6px;
+  border-color: #3d444d;
+  box-shadow: 0px 2px 6px 0px #000000;
+  font-size: 1.2rem;
 }
 
 .links:hover {
-  background-color: rgb(191, 123, 224);
-  transition: all 0.5s ease-in-out;
+  background-color: #2e3742;
+  transition: all 0.2s ease-in-out;
+}
+
+a {
+  padding: 0.5rem 0rem 0.5rem 0rem !important;
+}
+
+
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
