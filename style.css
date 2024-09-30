@@ -56,7 +56,9 @@ a {
 }
 
 .links {
+  padding: 0;
   width: 140%;
+  min-width: 200px;
   height: fit-content;
   background-color: #212830;
   border: 1px solid;
@@ -65,17 +67,18 @@ a {
   box-shadow: 0px 2px 6px 0px #000000;
   font-size: 1.2rem;
 }
-
+.links a {
+  padding-bottom: 0.2;
+  padding-top: 0.2;
+}
 .links:hover {
   background-color: #2e3742;
   transition: all 0.2s ease-in-out;
 }
 
 a {
-  padding: 0.5rem 0rem 0.5rem 0rem !important;
+  padding: 0.3rem 0rem 0.3rem 0rem !important;
 }
-
-
 
 .tooltip-container {
   position: relative;
@@ -101,8 +104,28 @@ a {
   transition: opacity 0.3s;
 }
 
-
 .tooltip-container:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
+}
+
+.github,
+.linkedin,
+.instagram {
+  transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.github:hover {
+  transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  filter: brightness(0) saturate(100%) invert(10%) sepia(76%) saturate(4173%)
+    hue-rotate(258deg) brightness(88%) contrast(115%);
+}
+.linkedin:hover {
+  filter: brightness(0) saturate(100%) invert(26%) sepia(98%) saturate(1631%)
+    hue-rotate(181deg) brightness(97%) contrast(92%);
+}
+
+.instagram:hover {
+  filter: brightness(0) saturate(100%) invert(26%) sepia(94%) saturate(4898%)
+    hue-rotate(284deg) brightness(92%) contrast(118%);
 }
